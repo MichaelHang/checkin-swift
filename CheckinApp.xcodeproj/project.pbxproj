@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 77;
+    objects = {
+        000000000000000000000022 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000001;
+        };
+        000000000000000000000023 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000002;
+        };
+        000000000000000000000024 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000003;
+        };
+        000000000000000000000025 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000004;
+        };
+        000000000000000000000026 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000005;
+        };
+        000000000000000000000027 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000006;
+        };
+        000000000000000000000028 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000007;
+        };
+        000000000000000000000029 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000008;
+        };
+        00000000000000000000002A /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000009;
+        };
+        00000000000000000000002B /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000000A;
+        };
+        00000000000000000000002C /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000000B;
+        };
+        00000000000000000000002D /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000000C;
+        };
+        00000000000000000000002E /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000000D;
+        };
+        00000000000000000000002F /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000000E;
+        };
+        000000000000000000000030 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000000F;
+        };
+        000000000000000000000031 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000010;
+        };
+        000000000000000000000032 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000011;
+        };
+        000000000000000000000033 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000012;
+        };
+        000000000000000000000034 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000013;
+        };
+        000000000000000000000035 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000014;
+        };
+        000000000000000000000036 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000015;
+        };
+        000000000000000000000037 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000016;
+        };
+        000000000000000000000038 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000017;
+        };
+        000000000000000000000039 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000018;
+        };
+        00000000000000000000003A /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000019;
+        };
+        00000000000000000000003B /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000001A;
+        };
+        00000000000000000000003C /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000001B;
+        };
+        00000000000000000000003D /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000001C;
+        };
+        00000000000000000000003E /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000001D;
+        };
+        00000000000000000000003F /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000020;
+        };
+        000000000000000000000040 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000001F;
+        };
+        000000000000000000000058 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000057;
+        };
+        00000000000000000000005A /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000059;
+        };
+        000000000000000000000061 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 000000000000000000000062;
+        };
+        000000000000000000000001 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Constants/Constants.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000002 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Models/CheckinRecordModel.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000003 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Models/PeriodProgress.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000004 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Models/TaskModel.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000005 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Pure/DateUtil.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000006 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Pure/IdUtil.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000007 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Pure/PeriodUtil.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000008 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Pure/StateMachine.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000009 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Pure/StreakUtil.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000005F /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinCore/Pure/StatsUtil.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000000A /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/CheckinApp.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000000B /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/TypeAliases.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000000C /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/ViewModels/PeriodViewModel.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000000D /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/ViewModels/StatsViewModel.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000000E /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/ViewModels/TaskViewModel.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000000F /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Repositories/CheckinRepository.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000010 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Data/PersistedCheckinRecord.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000011 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Data/PersistedTask.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000012 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/MenuBarView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000013 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/PeriodView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000014 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/RootView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000015 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/StatsView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000016 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/TaskDetailView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000017 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/TaskFormView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000018 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/TodayView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000019 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/components/GlassCard.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000001A /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/components/GlassPeriodCard.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000001B /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/components/GlassSheet.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000001C /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/components/GlassSidebar.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000001D /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/components/GlassTaskCard.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000057 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/CalendarView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000059 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/components/StatusStyle.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        000000000000000000000062 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/components/CalendarDayPolicy.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000005B /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Data/CheckinMigration.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000005C /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000005B;
+        };
+        00000000000000000000005D /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Sources/CheckinApp/Views/BackupView.swift";
+            lastKnownFileType = "sourcecode.swift";
+            sourceTree = "<group>";
+        };
+        00000000000000000000005E /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000005D;
+        };
+        000000000000000000000060 /* PBXBuildFile */ = {
+            isa = PBXBuildFile;
+            fileRef = 00000000000000000000005F;
+        };
+        00000000000000000000001E /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "app-Info.plist";
+            lastKnownFileType = "text.plist.xml";
+            sourceTree = "<group>";
+        };
+        00000000000000000000001F /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            path = "Resources/AppIcon.icns";
+            lastKnownFileType = "file";
+            sourceTree = "<group>";
+        };
+        000000000000000000000020 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            explicitFileType = "wrapper.library";
+            path = "CheckinCore.a";
+            sourceTree = "BUILT_PRODUCTS_DIR";
+        };
+        000000000000000000000021 /* PBXFileReference */ = {
+            isa = PBXFileReference;
+            explicitFileType = "wrapper.application";
+            path = "CheckinApp.app";
+            sourceTree = "BUILT_PRODUCTS_DIR";
+        };
+        000000000000000000000047 /* PBXFrameworksBuildPhase */ = {
+            isa = PBXFrameworksBuildPhase;
+            files = (00000000000000000000003F);
+        };
+        000000000000000000000041 /* PBXGroup */ = {
+            isa = PBXGroup;
+            children = (000000000000000000000001, 000000000000000000000002, 000000000000000000000003, 000000000000000000000004, 000000000000000000000005, 000000000000000000000006, 000000000000000000000007, 000000000000000000000008, 000000000000000000000009, 00000000000000000000005F);
+            name = "CheckinCore";
+            sourceTree = "<group>";
+        };
+        000000000000000000000042 /* PBXGroup */ = {
+            isa = PBXGroup;
+            children = (00000000000000000000000A, 00000000000000000000000B, 00000000000000000000000C, 00000000000000000000000D, 00000000000000000000000E, 00000000000000000000000F, 000000000000000000000010, 000000000000000000000011, 00000000000000000000005B, 00000000000000000000005D, 000000000000000000000012, 000000000000000000000013, 000000000000000000000014, 000000000000000000000015, 000000000000000000000016, 000000000000000000000017, 000000000000000000000018, 000000000000000000000019, 00000000000000000000001A, 00000000000000000000001B, 00000000000000000000001C, 00000000000000000000001D, 000000000000000000000057, 000000000000000000000059, 000000000000000000000062);
+            name = "CheckinApp";
+            sourceTree = "<group>";
+        };
+        000000000000000000000043 /* PBXGroup */ = {
+            isa = PBXGroup;
+            children = (000000000000000000000020, 000000000000000000000021, 00000000000000000000006E, 00000000000000000000006F);
+            name = "Products";
+            sourceTree = "<group>";
+        };
+        000000000000000000000044 /* PBXGroup */ = {
+            isa = PBXGroup;
+            children = (000000000000000000000041, 000000000000000000000042, 000000000000000000000043, 00000000000000000000001E, 00000000000000000000001F, 00000000000000000000007C);
+            sourceTree = "<group>";
+        };
+        00000000000000000000004C /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 000000000000000000000049;
+            proxyType = 1;
+            remoteGlobalIDString = 00000000000000000000004A;
+            remoteInfo = "CheckinCore";
+        };
+        00000000000000000000004A /* PBXNativeTarget */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 000000000000000000000055;
+            buildPhases = (000000000000000000000045);
+            buildRules = ();
+            dependencies = ();
+            name = "CheckinCore";
+            productName = "CheckinCore";
+            productReference = 000000000000000000000020;
+            productType = "com.apple.product-type.library.static";
+        };
+        00000000000000000000004B /* PBXNativeTarget */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 000000000000000000000056;
+            buildPhases = (000000000000000000000046, 000000000000000000000047, 000000000000000000000048);
+            buildRules = ();
+            dependencies = (00000000000000000000004D);
+            name = "CheckinApp";
+            productName = "CheckinApp";
+            productReference = 000000000000000000000021;
+            productType = "com.apple.product-type.application";
+        };
+        000000000000000000000049 /* PBXProject */ = {
+            isa = PBXProject;
+            attributes = {LastSwiftUpdateCheck = 2600; LastUpgradeCheck = 2600; TargetAttributes = {00000000000000000000004B = {CreatedOnToolsVersion = 26.0;}; 00000000000000000000004A = {CreatedOnToolsVersion = 26.0;}; 000000000000000000000087 = {CreatedOnToolsVersion = 26.0; TestTargetID = 00000000000000000000004A;}; 000000000000000000000088 = {CreatedOnToolsVersion = 26.0; TestTargetID = 00000000000000000000004B;};};};
+            buildConfigurationList = 000000000000000000000054;
+            compatibilityVersion = "Xcode 16.0";
+            developmentRegion = "en";
+            hasScannedForEncodings = 0;
+            knownRegions = (en, Base);
+            mainGroup = 000000000000000000000044;
+            productRefGroup = 000000000000000000000043;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (00000000000000000000004A, 00000000000000000000004B, 000000000000000000000087, 000000000000000000000088);
+        };
+        000000000000000000000048 /* PBXResourcesBuildPhase */ = {
+            isa = PBXResourcesBuildPhase;
+            files = (000000000000000000000040);
+        };
+        000000000000000000000045 /* PBXSourcesBuildPhase */ = {
+            isa = PBXSourcesBuildPhase;
+            files = (000000000000000000000022, 000000000000000000000023, 000000000000000000000024, 000000000000000000000025, 000000000000000000000026, 000000000000000000000027, 000000000000000000000028, 000000000000000000000029, 00000000000000000000002A, 000000000000000000000060);
+        };
+        000000000000000000000046 /* PBXSourcesBuildPhase */ = {
+            isa = PBXSourcesBuildPhase;
+            files = (00000000000000000000002B, 00000000000000000000002C, 00000000000000000000002D, 00000000000000000000002E, 00000000000000000000002F, 000000000000000000000030, 000000000000000000000031, 000000000000000000000032, 000000000000000000000033, 000000000000000000000034, 000000000000000000000035, 000000000000000000000036, 000000000000000000000037, 000000000000000000000038, 000000000000000000000039, 00000000000000000000003A, 00000000000000000000003B, 00000000000000000000003C, 00000000000000000000003D, 00000000000000000000003E, 000000000000000000000058, 00000000000000000000005A, 00000000000000000000005C, 00000000000000000000005E, 000000000000000000000061);
+        };
+        00000000000000000000004D /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 00000000000000000000004A;
+            targetProxy = 00000000000000000000004C;
+        };
+        00000000000000000000004E /* XCBuildConfiguration */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0";};
+            name = "Debug";
+        };
+        00000000000000000000004F /* XCBuildConfiguration */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0";};
+            name = "Release";
+        };
+        000000000000000000000050 /* XCBuildConfiguration */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; DEFINES_MODULE = YES; ENABLE_TESTABILITY = YES; BUILD_LIBRARY_FOR_DISTRIBUTION = YES; SKIP_INSTALL = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete";};
+            name = "Debug";
+        };
+        000000000000000000000051 /* XCBuildConfiguration */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; DEFINES_MODULE = YES; BUILD_LIBRARY_FOR_DISTRIBUTION = YES; SKIP_INSTALL = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; SWIFT_OPTIMIZATION_LEVEL = "-O";};
+            name = "Release";
+        };
+        000000000000000000000052 /* XCBuildConfiguration */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = "1"; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = "app-Info.plist"; LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks"; MARKETING_VERSION = "1.0"; PRODUCT_BUNDLE_IDENTIFIER = "dev.workbuddy.checkin"; PRODUCT_NAME = "CheckinApp"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone";};
+            name = "Debug";
+        };
+        000000000000000000000053 /* XCBuildConfiguration */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = "1"; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = "app-Info.plist"; LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks"; MARKETING_VERSION = "1.0"; PRODUCT_BUNDLE_IDENTIFIER = "dev.workbuddy.checkin"; PRODUCT_NAME = "CheckinApp"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; SWIFT_OPTIMIZATION_LEVEL = "-O";};
+            name = "Release";
+        };
+        000000000000000000000054 /* XCConfigurationList */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (00000000000000000000004E, 00000000000000000000004F);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = "Release";
+        };
+        000000000000000000000055 /* XCConfigurationList */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (000000000000000000000050, 000000000000000000000051);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = "Release";
+        };
+        000000000000000000000056 /* XCConfigurationList */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (000000000000000000000052, 000000000000000000000053);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = "Release";
+        };
+		/* ===== Test targets (added 2026-09-22) ===== */
+		000000000000000000000063 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinCoreTests/ConstantsTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000064 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinCoreTests/DateUtilTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000065 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinCoreTests/IdUtilTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000066 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinCoreTests/PeriodUtilTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000067 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinCoreTests/StateMachineTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000068 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinCoreTests/StatsUtilTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000069 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinCoreTests/StreakUtilTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		00000000000000000000006A /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinAppTests/BackupTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		00000000000000000000006B /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinAppTests/CalendarHistoricalActionTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		00000000000000000000006C /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinAppTests/MigrationTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		00000000000000000000006D /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinAppTests/StatusStyleTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		00000000000000000000008F /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			path = "Tests/CheckinAppTests/RepositoryTests.swift";
+			lastKnownFileType = "sourcecode.swift";
+			sourceTree = "<group>";
+		};
+		00000000000000000000006E /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.cfbundle";
+			path = "CheckinCoreTests.xctest";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		00000000000000000000006F /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.cfbundle";
+			path = "CheckinAppTests.xctest";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		000000000000000000000070 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000063; };
+		000000000000000000000071 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000064; };
+		000000000000000000000072 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000065; };
+		000000000000000000000073 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000066; };
+		000000000000000000000074 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000067; };
+		000000000000000000000075 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000068; };
+		000000000000000000000076 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000069; };
+		000000000000000000000077 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 00000000000000000000006A; };
+		000000000000000000000078 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 00000000000000000000006B; };
+		000000000000000000000079 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 00000000000000000000006C; };
+		00000000000000000000007A /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 00000000000000000000006D; };
+		000000000000000000000090 /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 00000000000000000000008F; };
+		00000000000000000000007B /* PBXBuildFile */ = { isa = PBXBuildFile; fileRef = 000000000000000000000020; };
+		00000000000000000000007C /* PBXGroup */ = {
+			isa = PBXGroup;
+			children = (00000000000000000000007D, 00000000000000000000007E);
+			name = "Tests";
+			sourceTree = "<group>";
+		};
+		00000000000000000000007D /* PBXGroup */ = {
+			isa = PBXGroup;
+			children = (000000000000000000000063, 000000000000000000000064, 000000000000000000000065, 000000000000000000000066, 000000000000000000000067, 000000000000000000000068, 000000000000000000000069);
+			name = "CheckinCoreTests";
+			sourceTree = "<group>";
+		};
+		00000000000000000000007E /* PBXGroup */ = {
+			isa = PBXGroup;
+			children = (00000000000000000000006A, 00000000000000000000006B, 00000000000000000000006C, 00000000000000000000006D, 00000000000000000000008F);
+			name = "CheckinAppTests";
+			sourceTree = "<group>";
+		};
+		00000000000000000000007F /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (000000000000000000000070, 000000000000000000000071, 000000000000000000000072, 000000000000000000000073, 000000000000000000000074, 000000000000000000000075, 000000000000000000000076);
+		};
+		000000000000000000000080 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (00000000000000000000007B);
+		};
+		000000000000000000000081 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (000000000000000000000077, 000000000000000000000078, 000000000000000000000079, 00000000000000000000007A, 000000000000000000000090);
+		};
+		000000000000000000000082 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = ();
+		};
+		000000000000000000000083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000049;
+			proxyType = 1;
+			remoteGlobalIDString = 00000000000000000000004A;
+			remoteInfo = "CheckinCore";
+		};
+		000000000000000000000084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00000000000000000000004A;
+			targetProxy = 000000000000000000000083;
+		};
+		000000000000000000000085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000049;
+			proxyType = 1;
+			remoteGlobalIDString = 00000000000000000000004B;
+			remoteInfo = "CheckinApp";
+		};
+		000000000000000000000086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00000000000000000000004B;
+			targetProxy = 000000000000000000000085;
+		};
+		000000000000000000000087 /* PBXNativeTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000089;
+			buildPhases = (00000000000000000000007F, 000000000000000000000080);
+			buildRules = ();
+			dependencies = (000000000000000000000084);
+			name = "CheckinCoreTests";
+			productName = "CheckinCoreTests";
+			productReference = 00000000000000000000006E;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		000000000000000000000088 /* PBXNativeTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000008A;
+			buildPhases = (000000000000000000000081, 000000000000000000000082);
+			buildRules = ();
+			dependencies = (000000000000000000000086);
+			name = "CheckinAppTests";
+			productName = "CheckinAppTests";
+			productReference = 00000000000000000000006F;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00000000000000000000008B /* XCBuildConfiguration */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; TEST_TARGET_NAME = "CheckinCoreTests";};
+			name = "Debug";
+		};
+		00000000000000000000008C /* XCBuildConfiguration */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; SWIFT_OPTIMIZATION_LEVEL = "-O"; TEST_TARGET_NAME = "CheckinCoreTests";};
+			name = "Release";
+		};
+		00000000000000000000008D /* XCBuildConfiguration */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckinApp.app/Contents/MacOS/CheckinApp"; BUNDLE_LOADER = "$(TEST_HOST)";};
+			name = "Debug";
+		};
+		00000000000000000000008E /* XCBuildConfiguration */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckinApp.app/Contents/MacOS/CheckinApp"; BUNDLE_LOADER = "$(TEST_HOST)"; SWIFT_OPTIMIZATION_LEVEL = "-O";};
+			name = "Release";
+		};
+		000000000000000000000089 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (00000000000000000000008B, 00000000000000000000008C);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		00000000000000000000008A /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (00000000000000000000008D, 00000000000000000000008E);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+    };
+    rootObject = 000000000000000000000049 /* Project object */;
+}
