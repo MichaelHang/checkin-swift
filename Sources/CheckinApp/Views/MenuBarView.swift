@@ -7,6 +7,7 @@ import CheckinCore
 /// - `NSStatusItem` showing today's progress (e.g. 3/5)
 /// - Click to open a mini list with one-click check-in / review
 /// - Global hotkey to check in (needs `Carbon` / global event monitoring)
+@MainActor
 final class MenuBarController {
     private var statusItem: NSStatusItem?
 

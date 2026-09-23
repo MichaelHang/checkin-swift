@@ -1,8 +1,19 @@
-# 打卡 · CheckinApp
+# 打卡
 
 一款原生 macOS 打卡/习惯追踪应用。SwiftUI + SwiftData 构建，核心逻辑全部下沉到纯函数层，可完整单测。
 
-> 要求 macOS 26.0+，使用 Xcode 26+ 打开（当前以 Xcode 27 验证）。
+## 下载安装
+
+从 [Releases](../../releases) 页面下载 `CheckinApp.dmg`，打开后把 **CheckinApp** 拖入「应用程序」文件夹即可。通用二进制，Apple Silicon 与 Intel Mac 均可运行，要求 **macOS 26.0+**。
+
+**首次打开**：应用目前未做开发者签名与公证，首次启动时 macOS 可能提示「无法验证开发者」。处理方式：
+
+- 打开 **系统设置 → 隐私与安全性**，在页面底部找到被拦截的提示，点 **仍要打开**；
+- 或在终端执行一次：
+
+  ```bash
+  xattr -cr /Applications/CheckinApp.app
+  ```
 
 ## 功能
 

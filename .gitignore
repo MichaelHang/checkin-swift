@@ -4,8 +4,12 @@
 xcuserdata/
 *.xcuserstate
 
+# 编译产物
 Build/
 build/
 DerivedData/
-
+dist/
 *.xcresult
+
+# 本地打包脚本（含个人路径/口令时不应入库）
+make_dmg.sh

@@ -47,7 +47,6 @@ struct TaskFormView: View {
             _type = State(initialValue: initialType)
         }
 
-        let c = DateUtil.components(base)
         _targetDate = State(initialValue: base)
         _selWeekday = State(initialValue: editTask?.targetWeekday ?? 1)
 
