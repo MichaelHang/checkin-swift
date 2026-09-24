@@ -383,7 +383,7 @@
         000000000000000000000021 /* PBXFileReference */ = {
             isa = PBXFileReference;
             explicitFileType = "wrapper.application";
-            path = "CheckinApp.app";
+            path = "Checkin.app";
             sourceTree = "BUILT_PRODUCTS_DIR";
         };
         000000000000000000000047 /* PBXFrameworksBuildPhase */ = {
@@ -495,12 +495,12 @@
         };
         000000000000000000000052 /* XCBuildConfiguration */ = {
             isa = XCBuildConfiguration;
-            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = "1"; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = "app-Info.plist"; LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks"; MARKETING_VERSION = "1.0"; PRODUCT_BUNDLE_IDENTIFIER = "dev.workbuddy.checkin"; PRODUCT_NAME = "CheckinApp"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone";};
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = "1"; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = "app-Info.plist"; LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks"; MARKETING_VERSION = "1.0"; PRODUCT_BUNDLE_IDENTIFIER = "dev.workbuddy.checkin"; PRODUCT_NAME = "Checkin"; PRODUCT_MODULE_NAME = "CheckinApp"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; ENABLE_TESTABILITY = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone";};
             name = "Debug";
         };
         000000000000000000000053 /* XCBuildConfiguration */ = {
             isa = XCBuildConfiguration;
-            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = "1"; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = "app-Info.plist"; LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks"; MARKETING_VERSION = "1.0"; PRODUCT_BUNDLE_IDENTIFIER = "dev.workbuddy.checkin"; PRODUCT_NAME = "CheckinApp"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; SWIFT_OPTIMIZATION_LEVEL = "-O";};
+            buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = "1"; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = "app-Info.plist"; LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks"; MARKETING_VERSION = "1.0"; PRODUCT_BUNDLE_IDENTIFIER = "dev.workbuddy.checkin"; PRODUCT_NAME = "Checkin"; PRODUCT_MODULE_NAME = "CheckinApp"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; SWIFT_OPTIMIZATION_LEVEL = "-O";};
             name = "Release";
         };
         000000000000000000000054 /* XCConfigurationList */ = {
@@ -711,12 +711,12 @@
 		};
 		00000000000000000000008D /* XCBuildConfiguration */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckinApp.app/Contents/MacOS/CheckinApp"; BUNDLE_LOADER = "$(TEST_HOST)";};
+			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checkin.app/Contents/MacOS/Checkin"; BUNDLE_LOADER = "$(TEST_HOST)";};
 			name = "Debug";
 		};
 		00000000000000000000008E /* XCBuildConfiguration */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CheckinApp.app/Contents/MacOS/CheckinApp"; BUNDLE_LOADER = "$(TEST_HOST)"; SWIFT_OPTIMIZATION_LEVEL = "-O";};
+			buildSettings = {CODE_SIGN_STYLE = "Manual"; CODE_SIGN_IDENTITY = "-"; DEVELOPMENT_TEAM = ""; MACOSX_DEPLOYMENT_TARGET = "26.0"; SDKROOT = "macosx"; SWIFT_VERSION = "6.0"; SWIFT_STRICT_CONCURRENCY = "complete"; OTHER_SWIFT_FLAGS = "-strict-concurrency=complete"; COMBINE_HIDPI_IMAGES = YES; GENERATE_INFOPLIST_FILE = YES; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = NO; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Checkin.app/Contents/MacOS/Checkin"; BUNDLE_LOADER = "$(TEST_HOST)"; SWIFT_OPTIMIZATION_LEVEL = "-O";};
 			name = "Release";
 		};
 		000000000000000000000089 /* XCConfigurationList */ = {

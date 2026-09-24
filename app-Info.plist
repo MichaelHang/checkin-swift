@@ -9,7 +9,7 @@
     <key>CFBundleDisplayName</key>
     <string>Checkin</string>
     <key>CFBundleExecutable</key>
-    <string>CheckinApp</string>
+    <string>Checkin</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleInfoDictionaryVersion</key>

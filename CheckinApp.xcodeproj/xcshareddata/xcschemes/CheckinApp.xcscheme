@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00000000000000000000004B"
-               BuildableName = "CheckinApp.app"
+               BuildableName = "Checkin.app"
                BlueprintName = "CheckinApp"
                ReferencedContainer = "container:CheckinApp.xcodeproj">
             </BuildableReference>
@@ -93,7 +93,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "00000000000000000000004B"
-            BuildableName = "CheckinApp.app"
+            BuildableName = "Checkin.app"
             BlueprintName = "CheckinApp"
             ReferencedContainer = "container:CheckinApp.xcodeproj">
          </BuildableReference>
@@ -110,7 +110,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "00000000000000000000004B"
-            BuildableName = "CheckinApp.app"
+            BuildableName = "Checkin.app"
             BlueprintName = "CheckinApp"
             ReferencedContainer = "container:CheckinApp.xcodeproj">
          </BuildableReference>

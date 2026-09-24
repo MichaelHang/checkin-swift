@@ -4,7 +4,7 @@
 
 ## 下载安装
 
-从 [Releases](../../releases) 页面下载 `CheckinApp.dmg`，打开后把 **CheckinApp** 拖入「应用程序」文件夹即可。通用二进制，Apple Silicon 与 Intel Mac 均可运行，要求 **macOS 26.0+**。
+从 [Releases](../../releases) 页面下载 `Checkin.dmg`，打开后把 **Checkin** 拖入「应用程序」文件夹即可。通用二进制，Apple Silicon 与 Intel Mac 均可运行，要求 **macOS 26.0+**。
 
 **首次打开**：应用目前未做开发者签名与公证，首次启动时 macOS 可能提示「无法验证开发者」。处理方式：
 
@@ -12,7 +12,7 @@
 - 或在终端执行一次：
 
   ```bash
-  xattr -cr /Applications/CheckinApp.app
+  xattr -cr /Applications/Checkin.app
   ```
 
 ## 功能
@@ -59,7 +59,7 @@ open CheckinApp.xcodeproj        # Xcode 中 ⌘R 运行
 xcodebuild test -project CheckinApp.xcodeproj -scheme CheckinApp -destination 'platform=macOS'
 
 # 编译产物位置（已配置为跟随工程目录）
-#   DerivedData/CheckinApp/Build/Products/Debug/CheckinApp.app
+#   DerivedData/CheckinApp/Build/Products/Debug/Checkin.app
 ```
 
 target 一览：`CheckinCore`（静态库）、`CheckinApp`（应用）、`CheckinCoreTests` + `CheckinAppTests`（单测，随 CheckinApp scheme 一并执行）。
