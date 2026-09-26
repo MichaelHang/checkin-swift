@@ -75,6 +75,7 @@ struct GlassPeriodCard: View {
                             .buttonStyle(.bordered)
                             .accessibilityLabel("撤销：\(task.name)")
                     }
+                    .transition(.opacity.combined(with: .move(edge: .top)))
                 }
 
                 if showActions, let onSkip {
@@ -93,6 +94,8 @@ struct GlassPeriodCard: View {
             showStatus && progress.achieved ? Glass.regular.tint(.green.opacity(0.12)) : Glass.regular,
             in: RoundedRectangle(cornerRadius: 14)
         )
+        .animation(.snappy(duration: 0.25), value: hasAwaiting)
+        .hoverHighlight(enabled: onTap != nil)
     }
 
     // MARK: - Status badge
@@ -122,6 +125,7 @@ struct GlassPeriodCard: View {
 
     // MARK: - Percent bar (translucent track + gradient fill in system accent color)
 
+    /// Percent fill animates only on `progress.percent` changes (window resizes stay instant).
     private var progressBar: some View {
         GeometryReader { geo in
             let w = geo.size.width
@@ -141,5 +145,6 @@ struct GlassPeriodCard: View {
             .frame(height: 8)
         }
         .frame(height: 8)
+        .animation(.snappy(duration: 0.3), value: progress.percent)
     }
 }

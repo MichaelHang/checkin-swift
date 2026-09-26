@@ -149,6 +149,10 @@ struct CalendarView: View {
                 }
             }
         }
+        // Rebuild the grid from scratch on scope switch: a LazyVGrid shrinking from 35/42
+        // cells to 7 can leave stale cells/height behind, painting a leftover card over the
+        // divider below. Fresh identity forces a clean relayout.
+        .id(scope)
     }
 
     // MARK: - Selected-day tasks
@@ -158,6 +162,7 @@ struct CalendarView: View {
             dayTitle
             dayList
         }
+        .animation(.snappy(duration: 0.2), value: selected)
     }
 
     private var dayTitle: some View {
@@ -323,6 +328,8 @@ private struct MonthDayCell: View {
         .buttonStyle(.plain)
         .background(cellBackground)
         .overlay(cellBorder)
+        .animation(.snappy(duration: 0.2), value: isSelected)
+        .hoverHighlight(amount: 0.04, cornerRadius: 10)
         .accessibilityLabel(accessibilityText)
     }
 
@@ -416,6 +423,8 @@ private struct WeekDayCell: View {
             RoundedRectangle(cornerRadius: 10)
                 .strokeBorder(Color.accentColor, lineWidth: isToday ? 1.5 : 0)
         }
+        .animation(.snappy(duration: 0.2), value: isSelected)
+        .hoverHighlight(amount: 0.04, cornerRadius: 10)
         .accessibilityLabel("\(DateUtil.formatCNDate(date))，\(items.count) 个任务")
     }
 }
@@ -445,6 +454,8 @@ private struct DayTaskRow: View {
             status == .awaiting ? Glass.regular.tint(.blue.opacity(0.15)) : Glass.regular,
             in: RoundedRectangle(cornerRadius: 14)
         )
+        .animation(.snappy(duration: 0.25), value: status)
+        .hoverHighlight(enabled: onTap != nil)
     }
 
     private var rowContent: some View {
@@ -456,7 +467,10 @@ private struct DayTaskRow: View {
             // ⚠️ Restore (= revoke) on a future day must not go through `canAct` (it blocks future
             // days), or a skip made in advance could never be undone. Skipped state is gated by
             // `canSkip` instead.
-            if canAct || (status == .skipped && canSkip) { actions }
+            if canAct || (status == .skipped && canSkip) {
+                actions
+                    .transition(.opacity.combined(with: .scale(0.9, anchor: .trailing)))
+            }
         }
     }
 

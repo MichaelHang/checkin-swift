@@ -74,6 +74,9 @@ struct CheckinApp: App {
             RootView()
                 .modelContainer(container)
         }
+        // New windows open in the wide (sidebar + detail) layout; users can still shrink
+        // to the 390pt compact minimum. Only affects window creation, not restored frames.
+        .defaultSize(width: 600, height: 560)
         // Window can shrink to ≈390pt (min size enforced by RootView's .frame(minWidth:minHeight:))
         .windowResizability(.contentMinSize)
     }

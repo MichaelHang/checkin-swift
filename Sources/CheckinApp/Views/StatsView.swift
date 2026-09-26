@@ -16,6 +16,7 @@ struct StatsView: View {
     @Query private var persistedRecords: [PersistedCheckinRecord]
 
     @State private var vm = StatsViewModel()
+    @State private var showForm = false
 
     private var tasks: [Task] { persistedTasks.map { $0.toValue } }
     private var records: [CheckinRecord] { persistedRecords.map { $0.toValue } }
@@ -24,7 +25,7 @@ struct StatsView: View {
     var body: some View {
         ScrollView {
             if tasks.isEmpty {
-                emptyHint("还没有任务")
+                emptyStateView
             } else {
                 let stats = vm.weeklyStats(tasks, records: records, ref: now)
                 let byTask = vm.completionByTask(tasks, records: records, ref: now)
@@ -42,6 +43,9 @@ struct StatsView: View {
             }
         }
         .navigationTitle("统计")
+        .sheet(isPresented: $showForm) {
+            TaskFormView(editTask: nil)
+        }
     }
 
     // MARK: - Top three cards
@@ -184,17 +188,17 @@ struct StatsView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    private func emptyHint(_ text: String) -> some View {
-        VStack(spacing: 8) {
-            Text(text)
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-            Text("点右上角 + 新建任务后，这里会自动统计")
-                .font(.caption)
-                .foregroundStyle(.secondary)
+    /// Full-page empty state (no tasks yet): native placeholder + create action.
+    private var emptyStateView: some View {
+        ContentUnavailableView {
+            Label("还没有任务", systemImage: "chart.bar")
+        } description: {
+            Text("创建任务并打卡后，这里会自动生成统计")
+        } actions: {
+            Button("新建任务") { showForm = true }
+                .buttonStyle(.borderedProminent)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(16)
+        .frame(maxWidth: .infinity, minHeight: 420)
     }
 
     /// nil → "—"; otherwise a rounded percentage (never fabricates 0% for alignment).

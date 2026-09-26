@@ -52,14 +52,7 @@ struct PeriodView: View {
                     .foregroundStyle(.secondary)
 
                 if scopedTasks.isEmpty {
-                    Text(scope == .daily ? "暂无每日任务，点右上角 + 添加"
-                         : scope == .weekly ? "暂无每周任务，点右上角 + 添加"
-                         : scope == .monthly ? "暂无每月任务，点右上角 + 添加"
-                         : "暂无每周某天任务，点右上角 + 添加")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(10)
+                    emptyState
                 } else if scope == .daily {
                     ForEach(vm.dailyTasks(tasks)) { task in
                         let status = taskVM.statusOf(task, records: records, date: DateUtil.localDate(now))
@@ -131,6 +124,41 @@ struct PeriodView: View {
             if let task = tasks.first(where: { $0.id == wrapper.id }) {
                 TaskFormView(editTask: task)
             }
+        }
+    }
+
+    // MARK: - Empty state
+
+    /// Empty state per scope, with a direct create action.
+    private var emptyState: some View {
+        ContentUnavailableView {
+            Label(emptyTitle, systemImage: emptyIcon)
+        } description: {
+            Text("创建后自动出现在这里")
+        } actions: {
+            Button("新建任务") { showForm = true }
+                .buttonStyle(.borderedProminent)
+        }
+        .frame(maxWidth: .infinity, minHeight: 360)
+    }
+
+    private var emptyTitle: String {
+        switch scope {
+        case .daily: return "暂无每日任务"
+        case .weekly: return "暂无每周任务"
+        case .monthly: return "暂无每月任务"
+        case .weeklyDay: return "暂无每周某天任务"
+        default: return "暂无任务"
+        }
+    }
+
+    private var emptyIcon: String {
+        switch scope {
+        case .daily: return "sun.max"
+        case .weekly: return "7.circle"
+        case .monthly: return "31.circle"
+        case .weeklyDay: return "calendar.badge.clock"
+        default: return "tray"
         }
     }
 }

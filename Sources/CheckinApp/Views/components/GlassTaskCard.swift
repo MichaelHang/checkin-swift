@@ -29,6 +29,13 @@ struct GlassTaskCard: View {
 
     private var isAwaiting: Bool { showStatus && status == .awaiting }
 
+    /// Done states (pass / fail / skipped) render dimmed in status mode so remaining work
+    /// stands out. Awaiting stays highlighted (it still needs review); definition-mode cards
+    /// (`showStatus == false`, period tab) are never dimmed.
+    private var isDeemphasized: Bool {
+        showStatus && (status == .passed || status == .failed || status == .skipped)
+    }
+
     var body: some View {
         Button {
             onTap?()
@@ -38,7 +45,7 @@ struct GlassTaskCard: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(task.name)
                         .font(.title3.weight(.medium))
-                        .foregroundStyle(.primary)
+                        .foregroundStyle(isDeemphasized ? Color.secondary : Color.primary)
                     if let note = task.note, !note.isEmpty {
                         Text(note)
                             .font(.subheadline)
@@ -54,7 +61,10 @@ struct GlassTaskCard: View {
                     }
                 }
                 Spacer(minLength: 8)
-                if showActions { actionButtons }
+                if showActions {
+                    actionButtons
+                        .transition(.opacity.combined(with: .scale(0.9, anchor: .trailing)))
+                }
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -64,6 +74,9 @@ struct GlassTaskCard: View {
             isAwaiting ? Glass.regular.tint(.blue.opacity(0.15)) : Glass.regular,
             in: RoundedRectangle(cornerRadius: 14)
         )
+        .opacity(isDeemphasized ? 0.72 : 1)
+        .animation(.snappy(duration: 0.25), value: status)
+        .hoverHighlight(enabled: onTap != nil)
     }
 
     // MARK: - Recurrence badge
