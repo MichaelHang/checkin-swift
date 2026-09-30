@@ -464,10 +464,11 @@ private struct DayTaskRow: View {
                 .foregroundStyle(status.color)
             infoColumn
             Spacer(minLength: 8)
-            // ⚠️ Restore (= revoke) on a future day must not go through `canAct` (it blocks future
-            // days), or a skip made in advance could never be undone. Skipped state is gated by
-            // `canSkip` instead.
-            if canAct || (status == .skipped && canSkip) {
+            // Actions render when the row has any legal action. Day-bound actions (complete /
+            // pass / fail / revoke) go through `canAct`; skip (pending) and restore (skipped)
+            // go through `canSkip` — pre-skipping a future day (holiday plans) is legal, so
+            // future pending rows must still show their 跳过 button.
+            if canAct || (status == .pending && canSkip) || (status == .skipped && canSkip) {
                 actions
                     .transition(.opacity.combined(with: .scale(0.9, anchor: .trailing)))
             }
