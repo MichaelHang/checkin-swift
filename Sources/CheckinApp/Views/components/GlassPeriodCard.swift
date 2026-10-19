@@ -19,12 +19,14 @@ struct GlassPeriodCard: View {
     let progress: PeriodProgress
     let hasAwaiting: Bool
     var windowRange: String? = nil
-    let onCheckin: () -> Void
+    /// nil hides the check-in button (already checked in today — re-checking would overwrite).
+    var onCheckin: (() -> Void)? = nil
     let onPass: () -> Void
     let onFail: () -> Void
     let onRevoke: () -> Void
     var onTap: (() -> Void)? = nil
     var onSkip: (() -> Void)? = nil
+    var onRestore: (() -> Void)? = nil
     var showActions: Bool = true
     var showStatus: Bool = true
 
@@ -78,16 +80,32 @@ struct GlassPeriodCard: View {
                     .transition(.opacity.combined(with: .move(edge: .top)))
                 }
 
-                if showActions, let onSkip {
+                if showActions {
                     HStack(spacing: 8) {
-                        Button("跳过今天") { onSkip() }
-                            .buttonStyle(.bordered)
-                            .accessibilityLabel("跳过今天：\(task.name)")
+                        if let onCheckin {
+                            Button("打卡") { onCheckin() }
+                                .buttonStyle(.borderedProminent)
+                                .accessibilityLabel("打卡：\(task.name)")
+                        }
+                        if let onSkip {
+                            Button("跳过今天") { onSkip() }
+                                .buttonStyle(.bordered)
+                                .accessibilityLabel("跳过今天：\(task.name)")
+                        }
+                        if let onRestore {
+                            Button("恢复今天") { onRestore() }
+                                .buttonStyle(.bordered)
+                                .accessibilityLabel("恢复今天：\(task.name)")
+                        }
                     }
+                    .transition(.opacity.combined(with: .move(edge: .top)))
                 }
             }
             .padding(14)
             .frame(maxWidth: .infinity, alignment: .leading)
+            // Blank areas of the VStack are not hit-testable by default — declare the whole
+            // label tappable so clicking anywhere on the card triggers onTap.
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .glassEffect(

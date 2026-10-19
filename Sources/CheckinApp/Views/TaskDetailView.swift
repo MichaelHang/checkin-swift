@@ -41,6 +41,11 @@ struct TaskDetailView: View {
                 Text("任务不存在").foregroundStyle(.secondary)
             }
         }
+        // The task can disappear underneath this sheet (deleted via the edit form's delete
+        // action, or from another surface) — close instead of lingering on "not found".
+        .onChange(of: task?.id) { _, newId in
+            if newId == nil { dismiss() }
+        }
     }
 
     @ViewBuilder
@@ -146,10 +151,20 @@ struct TaskDetailView: View {
                                             .buttonStyle(.bordered)
                                             .accessibilityLabel("撤销：\(task.name)")
                                     }
-                                    // Single-day exemption: skip today (refDate is now, matching the period actions above)
-                                    Button("跳过今天") { taskVM.skip(task, refDate: refDate, context: modelContext) }
-                                        .buttonStyle(.bordered)
-                                        .accessibilityLabel("跳过今天：\(task.name)")
+                                    // Skip / restore are state-aware: skip only when nothing is
+                                    // recorded today, restore when today was skipped, and neither
+                                    // when a real check-in exists (a skip would erase it).
+                                    if let todayRecord = records.first(where: { $0.taskId == task.id && $0.date == today }) {
+                                        if todayRecord.status == .skipped {
+                                            Button("恢复今天") { taskVM.revoke(task, refDate: refDate, context: modelContext) }
+                                                .buttonStyle(.bordered)
+                                                .accessibilityLabel("恢复今天：\(task.name)")
+                                        }
+                                    } else {
+                                        Button("跳过今天") { taskVM.skip(task, refDate: refDate, context: modelContext) }
+                                            .buttonStyle(.bordered)
+                                            .accessibilityLabel("跳过今天：\(task.name)")
+                                    }
                                 }
                             }
                         }

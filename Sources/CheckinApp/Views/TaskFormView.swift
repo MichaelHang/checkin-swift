@@ -26,6 +26,7 @@ struct TaskFormView: View {
     @State private var note: String = ""
     @State private var endEnabled: Bool = false
     @State private var endDate: Date = DateUtil.now()
+    @State private var confirmDelete: Bool = false
 
     init(editTask: Task?, initialType: TaskType = .daily) {
         self.editTask = editTask
@@ -114,19 +115,45 @@ struct TaskFormView: View {
                         .textFieldStyle(.roundedBorder)
                 }
 
-                Button {
-                    save()
-                    dismiss()
-                } label: {
-                    Text(editTask == nil ? "创建" : "保存")
-                        .frame(maxWidth: .infinity)
+                HStack(spacing: 12) {
+                    // Delete lives in the edit form so every edit entry point (period tab,
+                    // detail page) offers it — the definition-management surface otherwise
+                    // has no delete path at all.
+                    if editTask != nil {
+                        Button {
+                            confirmDelete = true
+                        } label: {
+                            Label("删除任务", systemImage: "trash")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.bordered)
+                        .tint(.red)
+                    }
+                    Button {
+                        save()
+                        dismiss()
+                    } label: {
+                        Text(editTask == nil ? "创建" : "保存")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.indigo)
+                    .disabled(!canSave)
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(.indigo)
-                .disabled(!canSave)
             }
         }
         .frame(minWidth: 340, minHeight: 360)
+        .alert("确认删除", isPresented: $confirmDelete) {
+            Button("取消", role: .cancel) { }
+            Button("删除", role: .destructive) {
+                if let id = editTask?.id {
+                    CheckinRepository(modelContext: modelContext).deleteTask(id: id)
+                    dismiss()
+                }
+            }
+        } message: {
+            Text("删除后该任务及其全部打卡记录将不可恢复。")
+        }
     }
 
     // MARK: - Specific date (year / month / day menus)

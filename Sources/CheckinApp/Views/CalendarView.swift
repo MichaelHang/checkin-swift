@@ -24,8 +24,11 @@ struct DayTaskItem: Identifiable {
 
 /// Calendar view: week / month switching, per-day view of tasks and check-in status.
 ///
-/// - Shows only single-day tasks (daily / weekly on a given weekday / specific date).
-///   Period tasks (N times per week / month) span the whole period and stay in the period tab.
+/// - Single-day tasks (daily / weekly on a given weekday / specific date) appear on their due
+///   dates. Period tasks (N times per week / month) appear on every day of their CURRENT
+///   period: a missed day can be backfilled (the record lands with that day's periodKey and
+///   counts toward this period's target), future days can be pre-skipped. Closed periods stay
+///   out — their progress has no surface, backfill there would be invisible busywork.
 /// - Tapping a day expands that day's tasks below. Today and past days allow check-in /
 ///   review / revoke; only future days are read-only (see `canAct`) — backfilling on past
 ///   days is an explicit user requirement.
@@ -262,14 +265,18 @@ struct CalendarView: View {
         dayItems(date).filter { $0.status != .skipped }
     }
 
-    /// Whether a single-day task should appear on that date; period tasks never enter the calendar.
+    /// Whether a task should appear on that date in the calendar.
     private func isActiveOn(_ task: Task, date: Date) -> Bool {
         guard !DateUtil.isEnded(task, on: date) else { return false }
         switch task.type {
         case .daily: return true
         case .weeklyDay: return task.targetWeekday == DateUtil.weekdayISO(date)
         case .specificDate: return task.targetDate == DateUtil.localDate(date)
-        case .weekly, .monthly: return false
+        case .weekly, .monthly:
+            // Every day of the task's CURRENT period (missed-day backfill + future pre-skip).
+            guard let dayKey = DateUtil.periodKey(type: task.type, date),
+                  let currentKey = DateUtil.periodKey(type: task.type, now) else { return false }
+            return dayKey == currentKey
         }
     }
 
@@ -448,6 +455,7 @@ private struct DayTaskRow: View {
             rowContent
                 .padding(12)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .glassEffect(

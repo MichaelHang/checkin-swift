@@ -128,23 +128,30 @@ struct TodayView: View {
             sectionHeader("周期任务进度")
             ForEach(periods) { task in
                 let progress = vm.progressFor(task, records: records, now: DateUtil.now())
-                // Show "skip today" only if the task has no record today yet —
-                // otherwise it would overwrite today's check-in (StateMachine.skip
-                // deletes the day's records first).
-                let hasTodayRecord = records.contains { $0.taskId == task.id && $0.date == today }
-                let periodOnSkip: (() -> Void)? = hasTodayRecord
-                    ? nil
-                    : { vm.skip(task, refDate: now, context: modelContext) }
+                // Card actions follow today's record state: no record → check in / skip;
+                // skipped → restore (revoke); already checked in → neither (re-checking or
+                // skipping would overwrite today's record).
+                let todayRecord = records.first { $0.taskId == task.id && $0.date == today }
+                let periodOnCheckin: (() -> Void)? = todayRecord == nil
+                    ? { vm.complete(task, refDate: now, context: modelContext) }
+                    : nil
+                let periodOnSkip: (() -> Void)? = todayRecord == nil
+                    ? { vm.skip(task, refDate: now, context: modelContext) }
+                    : nil
+                let periodOnRestore: (() -> Void)? = todayRecord?.status == .skipped
+                    ? { vm.revoke(task, refDate: now, context: modelContext) }
+                    : nil
                 GlassPeriodCard(
                     task: task,
                     progress: progress,
                     hasAwaiting: vm.hasAwaiting(task, records: records, now: DateUtil.now()),
-                    onCheckin: { vm.complete(task, refDate: now, context: modelContext) },
+                    onCheckin: periodOnCheckin,
                     onPass: { vm.pass(task, refDate: now, context: modelContext) },
                     onFail: { vm.fail(task, refDate: now, context: modelContext) },
                     onRevoke: { vm.revoke(task, refDate: now, context: modelContext) },
                     onTap: { detailTaskId = task.id },
-                    onSkip: periodOnSkip
+                    onSkip: periodOnSkip,
+                    onRestore: periodOnRestore
                 )
             }
         }

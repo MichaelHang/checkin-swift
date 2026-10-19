@@ -68,6 +68,9 @@ struct GlassTaskCard: View {
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
+            // Blank areas of the HStack are not hit-testable by default — declare the whole
+            // label tappable so clicking anywhere on the card triggers onTap.
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
         .glassEffect(
