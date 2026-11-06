@@ -70,3 +70,7 @@ target 一览：`CheckinCore`（静态库）、`CheckinApp`（应用）、`Check
 - `DateFormatter` 未固定 POSIX locale：系统日历设为非公历时字符串日期比较会错乱（中文环境默认公历，不受影响）。
 - 任务详情页周期任务的「跳过今天」没有今日视图那道防呆，可在打卡后覆盖当天记录。
 - 菜单栏常驻（MenuBar）为占位，尚未实现。
+
+## 许可证
+
+[MIT](LICENSE) © 2026 Michael
